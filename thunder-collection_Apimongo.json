@@ -1,0 +1,137 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Apimongo",
+    "dateExported": "2023-11-03T19:29:03.250Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7fac9cf2-78b1-42fa-9c2e-99688f5b08a9",
+            "colId": "07e305d7-a1d9-4871-b571-0293cc3c70e1",
+            "containerId": "",
+            "name": "get clientes",
+            "url": "localhost:3000/clientes/65453e9ef651243556783bab",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-29T21:34:35.307Z",
+            "modified": "2023-11-03T18:41:32.291Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlIjp7ImlkIjoiNjUzZWM5Nzg1ZjFmMzc4MDIzZmIwNzQyIn0sImlhdCI6MTY5ODY4MDcwNCwiZXhwIjoxNjk4Njg0MzA0fQ.yVtNUD7fElsXqmF8ivzcgf2g_MbtxZiBjK8MvA3Oi4E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e7f7c34a-f20b-46f2-b1d3-6bb11e01308b",
+            "colId": "07e305d7-a1d9-4871-b571-0293cc3c70e1",
+            "containerId": "",
+            "name": "post login",
+            "url": "localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-10-29T21:37:06.304Z",
+            "modified": "2023-10-30T20:47:06.085Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlIjp7ImlkIjoiNjUzZWM5Nzg1ZjFmMzc4MDIzZmIwNzQyIn0sImlhdCI6MTY5ODY4MDcwNCwiZXhwIjoxNjk4Njg0MzA0fQ.yVtNUD7fElsXqmF8ivzcgf2g_MbtxZiBjK8MvA3Oi4E"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"manuel12\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5a99a24-7576-4a19-be42-24b1596cc247",
+            "colId": "07e305d7-a1d9-4871-b571-0293cc3c70e1",
+            "containerId": "",
+            "name": "post cliente",
+            "url": "localhost:3000/clientes",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-10-29T21:42:36.334Z",
+            "modified": "2023-11-03T03:22:58.068Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"josefa\",\n  \"apellido\": \"mejias\",\n  \"usuario\": \"jose12\",\n  \"password\": \"23sed4\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4afc7ddc-f588-4e7a-b83d-b71c03ee0e84",
+            "colId": "07e305d7-a1d9-4871-b571-0293cc3c70e1",
+            "containerId": "",
+            "name": "delete cliente",
+            "url": "localhost:3000/clientes/65453e9ef651243556783bab",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-10-29T21:55:21.266Z",
+            "modified": "2023-11-03T18:41:45.951Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0525233a-8b50-4cc6-a7a6-55c83243c64d",
+            "colId": "07e305d7-a1d9-4871-b571-0293cc3c70e1",
+            "containerId": "",
+            "name": "update cliente",
+            "url": "localhost:3000/clientes/65453e9ef651243556783bab",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-10-29T22:04:27.092Z",
+            "modified": "2023-11-03T18:41:23.542Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"apellido\": \"morales\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "629b25f7-1b55-49ec-b520-c45f4f143eb7",
+            "colId": "07e305d7-a1d9-4871-b571-0293cc3c70e1",
+            "containerId": "",
+            "name": "get con paginacion",
+            "url": "localhost:3000/clientes?page=1&limit=4",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-10-30T20:58:27.211Z",
+            "modified": "2023-11-03T18:26:47.461Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "4",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRlIjp7ImlkIjoiNjU0NTNlNjEwY2NkNmQ4MTUxNGRmZjU4In0sImlhdCI6MTY5OTAzNjc5NCwiZXhwIjoxNjk5MDQwMzk0fQ.OjktpgFfnJ4ZQKoPkFEDAdAbG00ijdT4Gx51-sVQUxQ"
+            }
+        ]
+    }
+}
